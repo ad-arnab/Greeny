@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now - Greeny</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="greeny.png" alt="Greeny Logo" height="100">
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Choice Your Products</h1>
+
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+            <button class="prev-button" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel">
+                <!-- Manually added product cards here -->
+                <div class="product-card">
+                    <img src="product1.jpg" alt="Eco-Friendly Pot" class="product-image">
+                    <h3 class="product-name">Eco-Friendly Pot</h3>
+                    <p class="product-description">A beautiful pot made from recycled materials.</p>
+                    <p class="product-price">₺190.00</p>
+                    <button class="buy-button" onclick="addToCart('Eco-Friendly Pot', 190.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="product2.jpg" alt="Sustainable Planter" class="product-image">
+                    <h3 class="product-name">Sustainable Planter</h3>
+                    <p class="product-description">A sustainable planter crafted from eco-friendly materials.</p>
+                    <p class="product-price">₺290.00</p>
+                    <button class="buy-button" onclick="addToCart('Sustainable Planter', 290.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="product3.jpg" alt="Biodegradable Soil" class="product-image">
+                    <h3 class="product-name">Biodegradable Soil</h3>
+                    <p class="product-description">Organic and biodegradable soil for all your gardening needs.</p>
+                    <p class="product-price">₺90.00</p>
+                    <button class="buy-button" onclick="addToCart('Biodegradable Soil', 90.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="product4.jpg" alt="Recycled Watering Can" class="product-image">
+                    <h3 class="product-name">Recycled Watering Can</h3>
+                    <p class="product-description">A watering can made from 100% recycled plastic.</p>
+                    <p class="product-price">₺15.99</p>
+                    <button class="buy-button" onclick="addToCart('Recycled Watering Can', 150.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="product5.jpg" alt="Herb Garden Kit" class="product-image">
+                    <h3 class="product-name">Herb Garden Kit</h3>
+                    <p class="product-description">Grow your own herbs at home with this complete kit.</p>
+                    <p class="product-price">₺250.00</p>
+                    <button class="buy-button" onclick="addToCart('Herb Garden Kit', 250.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="product6.jpg" alt="Solar Garden Lights" class="product-image">
+                    <h3 class="product-name">Solar Garden Lights</h3>
+                    <p class="product-description">Eco-friendly solar-powered garden lights.</p>
+                    <p class="product-price">₺350.00</p>
+                    <button class="buy-button" onclick="addToCart('Solar Garden Lights', 350.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="product7.jpg" alt="Compost Bin" class="product-image">
+                    <h3 class="product-name">Compost Bin</h3>
+                    <p class="product-description">A compact bin for composting your organic waste.</p>
+                    <p class="product-price">₺390.00</p>
+                    <button class="buy-button" onclick="addToCart('Compost Bin', 390.00)">Add to Cart</button>
+                </div>
+            </div>
+            <button class="next-button" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₺<span id="total-price">0.00</span></p>
+            <button id="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Greeny. All rights reserved. Created by Arnab.</p>
+    </footer>
+
+    <script src="shop.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

@@ -1,2 +1,1 @@
-# Greeny
-This is My Demo Project For Greeny.
+# greeny.io

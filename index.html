@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+        <video class="video" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <img class="logo"src="greeny.png" height="120" width="400">
+            <p class="text">For You & The Nature</p>
+            <!-- <a href="fun.html" class="shop-button">Shop Now</a> -->
+        </div>
+    </div>
+
+    <script>
+        // Apply fade-in effect
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded'); // Add loaded class for animation
+
+            // Redirect to shop.html after 1 second
+            setTimeout(() => {
+                window.location.href = "homepage.html";
+            }, 2000); // 2000ms = 2 second
+        });
+    </script>
+
+</body>
+</html>
